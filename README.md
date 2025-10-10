@@ -28,7 +28,7 @@ Implementar validação nativa com atributos HTML5;
 Utilizar agrupamento lógico;
 Aplicar máscaras de input para CPF, telefone, CEP.
 
-## Clone este repósitorio
+## Clone este repósitorio:
 
 ```
     git clone https://github.com/bruno-kirashy/Arca-De-Resgate.git
