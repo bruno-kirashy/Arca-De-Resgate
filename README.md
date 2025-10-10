@@ -1,11 +1,11 @@
 # Projeto Entrega I – Fundamentos e Estruturação
 
 ### 🛠️ Tecnologias Utilizadas
-
+<p>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="Logo HTML5"/>
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Logo GitHub" />
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Logo Git" />
-
+</p>
 ## Especificações exigidas e atribuidas ao projeto:
 
 #### • **Estrutura HTML5 Semântica**
