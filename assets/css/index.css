@@ -48,7 +48,7 @@ header div nav ul {
   display: flex;
   gap: 30px;
   list-style: none;
-  font-size: 15px;
+  font-size: 17px;
 }
 header div nav ul li a {
   color: var(--curious-blue-950);
@@ -116,7 +116,7 @@ main {
   width: inherit;
   height: inherit;
   pointer-events: none;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
   z-index: 3;
 }
 
@@ -134,10 +134,20 @@ main {
   text-align: center;
   color: var(--curious-white-f);
 }
-
+.section_home .div_gradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    var(--curious-blue-300),
+    rgb(11, 204, 69)
+  );
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.74));
+}
 .section_home article h1 {
+  font-weight: 900;
+  color: transparent;
   font-size: 70px;
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.658);
 }
 .section_home article p {
   font-size: 25px;
@@ -215,6 +225,8 @@ main {
 }
 
 .section_Mission_Vision_Values .Mission_Vision_Values_Table article {
+  border: 1px solid var(--curious-blue-200);
+  border-top: 6px solid var(--curious-blue-300);
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.199);
   border-radius: 10px;
   height: 250px;
@@ -250,4 +262,66 @@ main {
   color: var(--curious-sub-title);
   max-width: 400px;
   margin-top: 20px;
+}
+
+/* -------------- FOOTER --------------- */
+
+footer {
+  display: grid;
+  grid-template-areas:
+    "logo nav net"
+    "copy copy copy";
+}
+.logo_article {
+  grid-area: logo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+.logo_article img {
+  width: 100px;
+}
+.logo_article p {
+  margin-top: 32px;
+  font-size: 10px;
+}
+.nav_article li {
+  grid-area: nav;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 15px;
+}
+.nav_article li a {
+  text-decoration: none;
+  color: var(--curious-blue-900);
+}
+.nav_article li a:hover {
+  color: var(--curious-blue-300);
+}
+.net_article {
+  grid-area: net;
+}
+.net_article div {
+  padding-top: 20px;
+}
+.net_article div a {
+  margin-right: 20px;
+}
+footer h6 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--curious-blue-900);
+  cursor: pointer;
+}
+.copy {
+  grid-area: copy;
+  background-color: var(--curious-blue-700);
+  height: 15px;
+}
+
+footer article {
+  margin: 1px;
 }

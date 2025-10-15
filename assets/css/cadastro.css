@@ -87,3 +87,65 @@ header div button a {
   text-decoration: none;
   color: var(--curious-white-f);
 }
+
+/* -------------- FOOTER --------------- */
+
+footer {
+  display: grid;
+  grid-template-areas:
+    "logo nav net"
+    "copy copy copy";
+}
+.logo_article {
+  grid-area: logo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+.logo_article img {
+  width: 100px;
+}
+.logo_article p {
+  margin-top: 32px;
+  font-size: 10px;
+}
+.nav_article li {
+  grid-area: nav;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 15px;
+}
+.nav_article li a {
+  text-decoration: none;
+  color: var(--curious-blue-900);
+}
+.nav_article li a:hover {
+  color: var(--curious-blue-300);
+}
+.net_article {
+  grid-area: net;
+}
+.net_article div {
+  padding-top: 20px;
+}
+.net_article div a {
+  margin-right: 20px;
+}
+footer h6 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--curious-blue-900);
+  cursor: pointer;
+}
+.copy {
+  grid-area: copy;
+  background-color: var(--curious-blue-700);
+  height: 15px;
+}
+
+footer article {
+  margin: 1px;
+}
