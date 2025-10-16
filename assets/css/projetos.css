@@ -169,8 +169,12 @@ main {
   gap: 20px;
   align-items: center;
 }
+.section_projects_new article.reverse {
+  flex-direction: row-reverse;
+}
 .section_projects_new article img {
-  margin-right: 40px;
+  border-radius: 25px;
+  margin-inline: 60px;
 }
 .section_projects_new article h2 {
   font-size: 35px;
