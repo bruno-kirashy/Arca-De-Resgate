@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="shortcut icon" href="./assets/Favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/icons/favicon.ico"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/assets/css/cadastro.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +20,7 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="div_nav">
         <a href="/">
           <img
             src="/assets/images/icons/arcaDeResgateIcon.png"
@@ -30,26 +34,36 @@
             <li><a href="/cadastro.html">Cadastro</a></li>
           </ul>
         </nav>
-        <button><a href="/cadastro.html">Doar</a></button>
+        <div class="button_a"><a href="/cadastro.html">Doar</a></div>
       </div>
     </header>
     <main>
-      <section>
-        <h1>Faça seu cadastro</h1>
-        <form action="" method="post">
+      <section class="section_home">
+        <img
+          src="/assets/images/cadastro/cadastro.png"
+          alt="Mão segurando coração."
+        />
+        <div class="background_filter_gradient"></div>
+        <article>
+          <h1>Junte-se a nós!</h1>
+        </article>
+      </section>
+      <section class="section_register">
+        <form method="post">
           <fieldset>
-            <legend>Informações</legend>
-            <div>
-              <label for="name">Nome:</label>
+            <legend>Faça seu cadastro</legend>
+            <div class="fieldset_article">
+              <label for="name">Nome</label>
               <input
+                autofocus
                 id="name"
                 placeholder="Digite o seu nome"
                 type="text"
                 required
               />
             </div>
-            <div>
-              <label for="email">Email:</label>
+            <div class="fieldset_article">
+              <label for="email">Email</label>
               <input
                 type="email"
                 placeholder="exemplotest@hotmail.com"
@@ -57,51 +71,97 @@
                 required
               />
             </div>
-            <div>
-              <label for="cpf">CPF:</label>
-              <input
-                inputmode="numeric"
-                type="text"
-                id="cpf"
-                required
-                pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
-              />
+            <div class="div_info_line">
+              <div class="fieldset_article">
+                <label for="cpf">CPF</label>
+                <input
+                  inputmode="numeric"
+                  type="text"
+                  id="cpf"
+                  placeholder="000.000.000-00"
+                  required
+                  pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+                />
+              </div>
+              <div class="fieldset_article">
+                <label for="phone">Telefone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="(00) 00000-0000"
+                  required
+                  pattern="\(\d{2}\)\s?\d{4,5}-?\d{4}"
+                />
+              </div>
             </div>
-            <div>
-              <label for="phone">Telefone:</label>
-              <input
-                type="tel"
-                id="phone"
-                required
-                pattern="\(\d{2}\)\s?\d{4,5}-?\d{4}"
-              />
-            </div>
-            <div>
-              <label for="date">Data de Nascimento:</label>
+            <div class="fieldset_article">
+              <label for="date">Data de Nascimento</label>
               <input type="date" id="date" required />
             </div>
-            <div>
-              <label for="address">Endereço:</label>
-              <input type="text" id="address" required />
-            </div>
-            <div>
-              <label for="cep">CEP:</label>
+            <div class="fieldset_article">
+              <label for="address">Endereço</label>
               <input
                 type="text"
-                inputmode="numeric"
-                maxlength="8"
-                id="cep"
-                pattern="\d{5}-?\d{3}"
+                id="address"
+                placeholder="Rua, número, complemento"
                 required
               />
             </div>
-            <div>
-              <label for="city">Cidade:</label>
-              <input type="text" id="city" required />
+            <div class="div_info_line">
+              <div class="fieldset_article">
+                <label for="cep">CEP</label>
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  maxlength="8"
+                  placeholder="00000-000"
+                  id="cep"
+                  pattern="\d{5}-?\d{3}"
+                  required
+                />
+              </div>
+              <div class="fieldset_article">
+                <label for="city">Cidade</label>
+                <input
+                  type="text"
+                  id="city"
+                  placeholder="Digite sua cidade"
+                  required
+                />
+              </div>
             </div>
-            <div>
-              <label for="state">Estado:</label>
-              <input type="text" id="state" required />
+            <div class="fieldset_article">
+              <label for="state">Estado</label>
+              <select name="state" id="state" required>
+                <option value="" disabled selected>Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
             </div>
           </fieldset>
           <button type="submit">Cadastrar</button>

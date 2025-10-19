@@ -35,7 +35,8 @@ header {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.226);
   background-color: var(--curious-white-f);
 }
-header div {
+
+header .div_nav {
   max-width: 90%;
   height: 100%;
   margin: auto;
@@ -44,27 +45,27 @@ header div {
   align-items: center;
 }
 
-header div nav ul {
+header .div_nav nav ul {
   display: flex;
   gap: 30px;
   list-style: none;
-  font-size: 17px;
+  font-size: 15px;
 }
-header div nav ul li a {
+header .div_nav nav ul li a {
   color: var(--curious-blue-950);
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
   display: block;
 }
-header div nav ul li a:hover {
+header .div_nav nav ul li a:hover {
   transform: scale(1.1);
   color: var(--curious-blue-300);
 }
 
-header div img {
+header .div_nav img {
   width: 75px;
 }
-header div button {
+header .div_nav .button_a {
   border: none;
   background-color: var(--curious-blue-300);
   cursor: pointer;
@@ -73,11 +74,11 @@ header div button {
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
 }
-header div button:hover {
+header .div_nav .button_a:hover {
   transform: scale(1.1);
   opacity: 90%;
 }
-header div button a {
+header .div_nav .button_a a {
   display: block;
   width: inherit;
   height: inherit;
@@ -88,6 +89,7 @@ header div button a {
   text-decoration: none;
   color: var(--curious-white-f);
 }
+
 /* -------------- CONTEUDO SECTION_HOME --------------- */
 main {
   margin-top: 80px;
@@ -155,7 +157,7 @@ main {
   text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.658);
 }
 
-.section_home article button {
+.section_home article .button_a_home {
   border: none;
   background-color: var(--curious-blue-400);
   cursor: pointer;
@@ -167,11 +169,11 @@ main {
   margin-top: 15px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.301);
 }
-.section_home article button:hover {
+.section_home article .button_a_home:hover {
   transform: scale(1.1);
   opacity: 90%;
 }
-.section_home article button a {
+.section_home article .button_a_home a {
   display: block;
   width: inherit;
   height: inherit;
@@ -324,4 +326,97 @@ footer h6 {
 
 footer article {
   margin: 1px;
+}
+
+/* 2. Breakpoint Small (sm) - Telas de 576px ou mais */
+@media (max-width: 576px) {
+  header .div_nav nav ul {
+    display: none;
+  }
+  .section_home {
+    height: 40vh;
+  }
+  .section_Mission_Vision_Values {
+    width: 100%;
+    padding: 0px 5px;
+  }
+  .section_Mission_Vision_Values .Mission_Vision_Values_Title h1 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .section_Mission_Vision_Values .Mission_Vision_Values_Title p {
+    font-size: 13px;
+  }
+  .section_Mission_Vision_Values .Mission_Vision_Values_Table p {
+    font-size: 12px;
+    min-width: 280px;
+  }
+  .section_home article {
+    width: 90%;
+  }
+  .section_home article h1 {
+    font-size: 30px;
+  }
+  .section_home article p {
+    font-size: 12px;
+  }
+  .section_Mission_Vision_Values .Mission_Vision_Values_Table {
+    gap: 20px;
+  }
+  .section_Mission_Vision_Values .Mission_Vision_Values_Table article {
+    margin-inline: 0px;
+  }
+  .net_article div a {
+    margin-right: 0px;
+  }
+  footer {
+    display: grid;
+    grid-template-areas:
+      "nav net net"
+      "logo logo logo"
+      "copy copy copy";
+  }
+  .net_article {
+    text-align: center;
+    margin-top: 3px;
+  }
+  .net_article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer h6 {
+    text-align: center;
+  }
+  .nav_article li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo_article {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 5px;
+  }
+  .logo_article img {
+    width: 40px;
+  }
+  .logo_article p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* 3. Breakpoint Medium (md) - Telas de 768px ou mais (Tablets) */
+@media (max-width: 768px) {
+}
+
+/* 4. Breakpoint Large (lg) - Telas de 992px ou mais (Laptops) */
+@media (max-width: 992px) {
+}
+
+/* 5. Breakpoint Extra Large (xl) - Telas de 1200px ou mais (Desktops Grandes) */
+@media (max-width: 1200px) {
 }

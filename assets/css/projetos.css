@@ -35,7 +35,7 @@ header {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.226);
   background-color: var(--curious-white-f);
 }
-header div {
+header .div_nav {
   max-width: 90%;
   height: 100%;
   margin: auto;
@@ -44,27 +44,27 @@ header div {
   align-items: center;
 }
 
-header div nav ul {
+header .div_nav nav ul {
   display: flex;
   gap: 30px;
   list-style: none;
-  font-size: 17px;
+  font-size: 15px;
 }
-header div nav ul li a {
+header .div_nav nav ul li a {
   color: var(--curious-blue-950);
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
   display: block;
 }
-header div nav ul li a:hover {
+header .div_nav nav ul li a:hover {
   transform: scale(1.1);
   color: var(--curious-blue-300);
 }
 
-header div img {
+header .div_nav img {
   width: 75px;
 }
-header div button {
+header .div_nav .button_a {
   border: none;
   background-color: var(--curious-blue-300);
   cursor: pointer;
@@ -73,11 +73,11 @@ header div button {
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
 }
-header div button:hover {
+header .div_nav .button_a:hover {
   transform: scale(1.1);
   opacity: 90%;
 }
-header div button a {
+header .div_nav .button_a a {
   display: block;
   width: inherit;
   height: inherit;
@@ -186,7 +186,7 @@ main {
   font-size: 18px;
   line-height: 1.5;
 }
-.section_projects_new article button {
+.section_projects_new article .button_article {
   border: none;
   cursor: pointer;
   width: 150px;
@@ -196,7 +196,7 @@ main {
   margin-top: 20px;
   background-color: var(--curious-blue-100);
 }
-.section_projects_new article button a {
+.section_projects_new article .button_article a {
   display: block;
   width: inherit;
   height: inherit;
@@ -208,7 +208,7 @@ main {
   text-decoration: none;
   color: var(--curious-blue-400);
 }
-.section_projects_new article button:hover {
+.section_projects_new article .button_article:hover {
   transform: scale(1.05);
   opacity: 90%;
 }
@@ -272,7 +272,7 @@ main {
   margin-bottom: 1px;
   flex: 1;
 }
-.make_diference_articles article button {
+.make_diference_articles article .button_register {
   border: none;
   cursor: pointer;
   width: 150px;
@@ -283,7 +283,7 @@ main {
   background-color: var(--curious-blue-100);
 }
 
-.make_diference_articles article button a {
+.make_diference_articles article .button_register a {
   display: block;
   width: inherit;
   height: inherit;
@@ -295,7 +295,7 @@ main {
   text-decoration: none;
   color: var(--curious-blue-400);
 }
-.make_diference_articles article button:hover {
+.make_diference_articles article .button_register:hover {
   transform: scale(1.05);
   opacity: 90%;
 }
