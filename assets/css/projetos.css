@@ -88,6 +88,9 @@ header .div_nav .button_a a {
   text-decoration: none;
   color: var(--curious-white-f);
 }
+.menu_mobile {
+  display: none;
+}
 
 /* -------------- CONTEUDO SECTION_HOME --------------- */
 
@@ -360,4 +363,294 @@ footer h6 {
 
 footer article {
   margin: 1px;
+}
+
+/* 5. Breakpoint Extra Large (xl) - Telas de 1200px ou menos (Desktops Grandes) */
+@media (max-width: 1260px) {
+  .section_home article {
+    width: 96%;
+  }
+  .section_home article h1 {
+    font-size: 70px;
+  }
+  .section_home article p {
+    font-size: 18px;
+  }
+  .net_article div a {
+    margin-right: 0px;
+  }
+  .section_projects_new {
+    width: 97%;
+  }
+  .section_projects_new h1 {
+    font-size: 30px;
+  }
+
+  .section_projects_new article img {
+    width: 500px;
+    margin-inline: 0px;
+  }
+  .section_make_diference {
+    width: 90%;
+  }
+
+  .make_diference_articles article {
+    margin-top: 0px;
+  }
+}
+
+/* 4. Breakpoint Large (lg) - Telas de 992px ou menos (Laptops) */
+@media (max-width: 992px) {
+  .section_home article {
+    width: 96%;
+  }
+  .section_home article h1 {
+    font-size: 70px;
+  }
+  .section_home article p {
+    font-size: 18px;
+  }
+  .net_article div a {
+    margin-right: 0px;
+  }
+  .section_projects_new {
+    width: 97%;
+  }
+  .section_projects_new h1 {
+    font-size: 30px;
+  }
+  .section_projects_new article {
+    flex-direction: column;
+  }
+  .section_projects_new article img {
+    width: 100%;
+    margin-inline: 0px;
+  }
+  .section_projects_new article.reverse {
+    flex-direction: column;
+  }
+  .section_make_diference {
+    width: 90%;
+  }
+  .make_diference_articles {
+    flex-direction: column-reverse;
+  }
+  .make_diference_articles article div {
+    flex-direction: column;
+  }
+  .make_diference_articles article {
+    margin-top: 0px;
+  }
+}
+
+/* 3. Breakpoint Medium (md) - Telas de 768px ou menos (Tablets) */
+@media (max-width: 768px) {
+  .section_home {
+    height: 40vh;
+  }
+  .section_home article {
+    width: 90%;
+  }
+  .section_home article h1 {
+    font-size: 56px;
+  }
+  .section_home article p {
+    font-size: 18px;
+  }
+  .net_article div a {
+    margin-right: 0px;
+  }
+  main {
+    margin-bottom: 40px;
+  }
+  footer {
+    display: grid;
+    grid-template-areas:
+      "nav net net"
+      "logo logo logo"
+      "copy copy copy";
+  }
+  .net_article {
+    text-align: center;
+    margin-top: 3px;
+  }
+  .net_article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer h6 {
+    text-align: center;
+  }
+  .nav_article li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo_article {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 5px;
+  }
+  .logo_article img {
+    width: 40px;
+  }
+  .logo_article p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .section_projects_new {
+    width: 97%;
+  }
+  .section_projects_new h1 {
+    font-size: 30px;
+  }
+  .section_projects_new article {
+    flex-direction: column;
+  }
+  .section_projects_new article img {
+    width: 100%;
+    margin-inline: 0px;
+  }
+  .section_projects_new article.reverse {
+    flex-direction: column;
+  }
+  .section_make_diference {
+    width: 90%;
+  }
+  .make_diference_articles {
+    flex-direction: column-reverse;
+  }
+  .make_diference_articles article div {
+    flex-direction: column;
+  }
+  .make_diference_articles article {
+    margin-top: 0px;
+  }
+}
+
+/* 2. Breakpoint Small (sm) - Telas de 576px ou menos */
+@media (max-width: 576px) {
+  .menu_mobile {
+    display: flex;
+  }
+  header .div_nav {
+    justify-content: space-between;
+  }
+  header .div_nav nav {
+    display: none;
+  }
+  .button_a {
+    display: none;
+  }
+
+  .section_home {
+    height: 25vh;
+  }
+  .section_home article {
+    width: 98%;
+  }
+  .section_home article h1 {
+    font-size: 35px;
+  }
+  .section_home article p {
+    font-size: 18px;
+  }
+  .net_article div a {
+    margin-right: 0px;
+  }
+  main {
+    margin-bottom: 40px;
+  }
+  footer {
+    display: grid;
+    grid-template-areas:
+      "nav net net"
+      "logo logo logo"
+      "copy copy copy";
+  }
+  .net_article {
+    text-align: center;
+    margin-top: 3px;
+  }
+  .net_article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer h6 {
+    text-align: center;
+  }
+  .nav_article li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo_article {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 5px;
+  }
+  .logo_article img {
+    width: 40px;
+  }
+  .logo_article p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .section_projects_new {
+    width: 97%;
+  }
+  .section_projects_new h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .section_projects_new article {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .section_projects_new article h2 {
+    font-size: 28px;
+  }
+  .section_projects_new article p {
+    font-size: 16px;
+  }
+  .section_projects_new article img {
+    width: 100%;
+    margin-inline: 0px;
+  }
+  .section_projects_new article.reverse {
+    flex-direction: column;
+  }
+  .section_make_diference {
+    width: 90%;
+  }
+  .make_diference_articles {
+    flex-direction: column-reverse;
+  }
+  .make_diference_articles article div {
+    flex-direction: column;
+  }
+  .make_diference_articles article {
+    margin-top: 0px;
+  }
+  .section_make_diference h1 {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+}
+/* 1. Breakpoint Extra Small (xs) - Telas menores que 359px (Celulares) */
+@media (max-width: 359px) {
+  .section_home article h1 {
+    font-size: 31px;
+  }
 }
