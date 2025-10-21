@@ -43,7 +43,9 @@ header .div_nav {
   justify-content: space-between;
   align-items: center;
 }
-
+.menu_mobile {
+  display: none;
+}
 header .div_nav nav ul {
   display: flex;
   gap: 30px;
@@ -308,4 +310,117 @@ footer h6 {
 
 footer article {
   margin: 1px;
+}
+
+/* 3. Breakpoint Medium (md) - Telas de 768px ou menos (Tablets) */
+@media (max-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-areas:
+      "nav net net"
+      "logo logo logo"
+      "copy copy copy";
+  }
+  .net_article {
+    text-align: center;
+    margin-top: 3px;
+  }
+  .net_article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer h6 {
+    text-align: center;
+  }
+  .nav_article li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo_article {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 5px;
+  }
+  .logo_article img {
+    width: 40px;
+  }
+  .logo_article p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  header .div_nav nav {
+    display: none;
+  }
+  .menu_mobile {
+    display: flex;
+  }
+  .button_a {
+    display: none;
+  }
+  .section_home article h1 {
+    font-size: 30px;
+  }
+  .section_home {
+    height: 20vh;
+  }
+  .section_home article {
+    width: 90%;
+  }
+  .section_register form {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: none;
+    padding: 20px;
+  }
+
+  .div_info_line {
+    display: block;
+  }
+  footer {
+    display: grid;
+    grid-template-areas:
+      "nav net net"
+      "logo logo logo"
+      "copy copy copy";
+  }
+  .net_article {
+    text-align: center;
+    margin-top: 3px;
+  }
+  .net_article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer h6 {
+    text-align: center;
+  }
+  .nav_article li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo_article {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 5px;
+  }
+  .logo_article img {
+    width: 40px;
+  }
+  .logo_article p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
