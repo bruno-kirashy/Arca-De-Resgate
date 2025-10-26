@@ -90,6 +90,94 @@ header .div_nav .button_a a {
   text-decoration: none;
   color: var(--curious-white-f);
 }
+
+/* -------------- MENU MOBILE --------------- */
+
+.menu_mobile_container {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.5s ease-out;
+}
+.menu_mobile_modal_filter {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.76);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-out;
+}
+.menu_mobile_modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+  transform: translateX(100%);
+  opacity: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  border-left: 6px solid var(--curious-blue-400);
+  box-shadow: -6px 0px 8px rgba(0, 0, 0, 0.226);
+  padding: 50px 30px;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.menu_mobile_opened {
+  visibility: visible;
+  opacity: 1;
+}
+.menu_mobile_opened_menu_mobile_modal {
+  transform: translateX(0%);
+}
+
+.menu_mobile_modal img {
+  width: 120px;
+  margin-bottom: 50px;
+}
+.menu_mobile_modal ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.menu_mobile_modal ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu_mobile_modal ul li a {
+  text-decoration: none;
+  font-size: 35px;
+  color: var(--curious-blue-800);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.exit_button {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 20px;
+  color: var(--curious-blue-800);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 /* -------------- CONTEUDO SECTION_HOME --------------- */
 main {
   margin-top: 80px;
