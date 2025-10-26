@@ -644,6 +644,27 @@ footer article {
   .make_diference_articles article {
     margin-top: 0px;
   }
+  .modal_premium_container {
+    min-height: 100%;
+    padding: 40px;
+    margin: 20px 100px;
+  }
+  .modal_premium_content article {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .modal_premium_content ul li {
+    font-size: 13px;
+  }
+  .active {
+    overflow-y: scroll;
+    overflow-x: none;
+  }
+  .modal_premium_section {
+    min-height: 100%;
+    display: block;
+  }
 }
 
 /* 4. Breakpoint Large (lg) - Telas de 992px ou menos (Laptops) */
@@ -687,6 +708,27 @@ footer article {
   }
   .make_diference_articles article {
     margin-top: 0px;
+  }
+  .modal_premium_container {
+    min-height: 100%;
+    padding: 40px;
+    margin: 20px 100px;
+  }
+  .modal_premium_content article {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .modal_premium_content ul li {
+    font-size: 13px;
+  }
+  .active {
+    overflow-y: scroll;
+    overflow-x: none;
+  }
+  .modal_premium_section {
+    min-height: 100%;
+    display: block;
   }
 }
 
