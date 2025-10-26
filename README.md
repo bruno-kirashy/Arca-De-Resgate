@@ -3,7 +3,6 @@
 Site estático desenvolvido para a ONG fictícia "Arca de Resgate", com foco em adoção e voluntariado.
 
 Este repositório contém o código-fonte do projeto, desenvolvido como parte do projeto da faculdade.
-![Gif de demonstração do site.](/assets/images/gifReadme/GifArcaDeResgate.gif)
 
 ### 🛠️ Tecnologias Utilizadas
 
@@ -14,6 +13,10 @@ Este repositório contém o código-fonte do projeto, desenvolvido como parte do
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Logo GitHub" />
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Logo Git" />
 </p>
+
+---
+
+![Gif de demonstração do site.](/assets/images/gifReadme/GifArcaDeResgate.gif)
 
 ## Especificações exigidas e atribuidas ao projeto:
 
