@@ -10,6 +10,7 @@
   --curious-blue-800: #093b56;
   --curious-blue-900: #032131;
   --curious-sub-title: rgba(0, 0, 0, 0.63);
+  --curious-sub-gray: #585858;
 }
 * {
   margin: 0;
@@ -452,6 +453,165 @@ footer article {
   margin: 1px;
 }
 
+/* -------------- MODAL PREMIUM --------------- */
+.modal_premium_section {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.555);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  visibility: hidden;
+}
+.modal_premium_container {
+  max-width: 1400px;
+  margin: 20px;
+  background-color: #ececec;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.226);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.active {
+  opacity: 1;
+  position: fixed;
+  display: flex;
+  visibility: visible;
+}
+.button_close_modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button_close_modal span {
+  color: #6d6d6d;
+  z-index: 101;
+  cursor: pointer;
+}
+.button_close_modal p {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--curious-blue-900);
+  width: 100%;
+  font-weight: 900;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-23px);
+}
+
+.modal_premium_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.modal_premium_content h2 {
+  margin: auto;
+  margin-top: 10px;
+  width: 90%;
+  text-align: center;
+}
+.modal_premium_content sub {
+  margin-top: 20px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  color: var(--curious-sub-gray);
+  font-weight: 900;
+}
+.modal_premium_content article {
+  width: 75%;
+  background-color: var(--curious-white-f);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.075);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 5px transparent solid;
+}
+.modal_premium_content article:last-child {
+  border: 5px var(--curious-blue-300) solid;
+}
+.modal_premium_content article h3 {
+  text-align: start;
+}
+.modal_premium_content article p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: start;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: var(--curious-blue-900);
+}
+.modal_premium_content article p i {
+  margin-left: 0px;
+  font-size: 15px;
+  color: var(--curious-sub-gray);
+  font-weight: 800;
+}
+.modal_premium_content button {
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0px;
+  border: none;
+  background-color: var(--curious-blue-400);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.modal_premium_content button:hover {
+  opacity: 80%;
+  transform: scale(1.01);
+}
+.modal_premium_content button a {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.modal_premium_content ul li {
+  list-style: none;
+  text-align: start;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: var(--curious-sub-gray);
+  font-weight: 600;
+}
+.modal_premium_content div {
+  display: flex;
+  justify-content: space-between;
+}
+.modal_premium_content div span {
+  color: var(--curious-blue-600);
+  font-weight: 600;
+  font-size: 13px;
+  background-color: #8ecafb49;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
 /* 5. Breakpoint Extra Large (xl) - Telas de 1200px ou menos (Desktops Grandes) */
 @media (max-width: 1260px) {
   .section_home article {
@@ -617,6 +777,29 @@ footer article {
   .make_diference_articles article {
     margin-top: 0px;
   }
+  .modal_premium_container {
+    min-height: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .modal_premium_content sub {
+    width: 90%;
+    margin-top: 8px;
+  }
+  .modal_premium_content article {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .modal_premium_content ul li {
+    font-size: 16px;
+  }
+  .active {
+    overflow-y: scroll;
+    overflow-x: none;
+  }
+  .modal_premium_section {
+    display: block;
+  }
 }
 
 /* 2. Breakpoint Small (sm) - Telas de 576px ou menos */
@@ -734,10 +917,35 @@ footer article {
     margin-top: 25px;
     margin-bottom: 50px;
   }
+  .modal_premium_container {
+    min-height: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .modal_premium_content article {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .modal_premium_content ul li {
+    font-size: 13px;
+  }
+  .active {
+    overflow-y: scroll;
+    overflow-x: none;
+  }
+  .modal_premium_section {
+    min-height: 100%;
+    display: block;
+  }
 }
+
 /* 1. Breakpoint Extra Small (xs) - Telas menores que 359px (Celulares) */
 @media (max-width: 359px) {
   .section_home article h1 {
     font-size: 31px;
+  }
+  .modal_premium_content sub {
+    width: 99%;
   }
 }

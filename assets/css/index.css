@@ -353,6 +353,93 @@ main {
   margin-top: 20px;
 }
 
+/* -------------- SEÇÃO DE FAÇA A DIFERENÇA --------------- */
+
+.section_make_diference {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.section_make_diference h1 {
+  font-size: 40px;
+  color: var(--curious-blue-900);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.make_diference_articles {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: start;
+}
+.make_diference_articles article {
+  flex: 1;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.make_diference_articles article h3 {
+  font-size: 24px;
+  color: var(--curious-blue-900);
+  margin-bottom: 10px;
+}
+
+.make_diference_articles article div {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--curious-sub-title);
+  display: flex;
+  text-align: start;
+  width: 100%;
+  margin-top: 30px;
+}
+.make_diference_articles article p {
+  color: var(--curious-sub-title);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  flex: 3;
+}
+.make_diference_articles article strong {
+  color: var(--curious-blue-900);
+  margin-bottom: 1px;
+  flex: 1;
+}
+.make_diference_articles article .button_register {
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 20px;
+  background-color: var(--curious-blue-100);
+}
+
+.make_diference_articles article .button_register a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--curious-blue-400);
+}
+.make_diference_articles article .button_register:hover {
+  transform: scale(1.05);
+  opacity: 90%;
+}
 /* -------------- FOOTER --------------- */
 
 footer {
@@ -480,6 +567,18 @@ footer article {
   .section_Mission_Vision_Values .Mission_Vision_Values_Table article {
     margin-inline: 0px;
   }
+  .section_make_diference {
+    width: 90%;
+  }
+  .make_diference_articles {
+    flex-direction: column-reverse;
+  }
+  .make_diference_articles article div {
+    flex-direction: column;
+  }
+  .make_diference_articles article {
+    margin-top: 0px;
+  }
   .net_article div a {
     margin-right: 0px;
   }
@@ -525,6 +624,18 @@ footer article {
   }
   .section_Mission_Vision_Values .Mission_Vision_Values_Table article {
     margin-inline: 0px;
+  }
+  .section_make_diference {
+    width: 90%;
+  }
+  .make_diference_articles {
+    flex-direction: column-reverse;
+  }
+  .make_diference_articles article div {
+    flex-direction: column;
+  }
+  .make_diference_articles article {
+    margin-top: 0px;
   }
   .net_article div a {
     margin-right: 0px;
@@ -625,6 +736,22 @@ footer article {
   }
   .section_Mission_Vision_Values .Mission_Vision_Values_Table article {
     margin-inline: 0px;
+  }
+  .section_make_diference {
+    width: 90%;
+  }
+  .make_diference_articles {
+    flex-direction: column-reverse;
+  }
+  .make_diference_articles article div {
+    flex-direction: column;
+  }
+  .make_diference_articles article {
+    margin-top: 0px;
+  }
+  .section_make_diference h1 {
+    margin-top: 25px;
+    margin-bottom: 50px;
   }
   .net_article div a {
     margin-right: 0px;
