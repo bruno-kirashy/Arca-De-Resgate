@@ -403,7 +403,7 @@ main {
 }
 .make_diference_articles article p {
   color: var(--curious-sub-title);
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
   margin-bottom: 10px;
   flex: 3;
